@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+.editable_content {  }
+.editable_content.above { margin-top:10px; margin-bottom:10px; }
+.editable_content.content { margin-top:30px; margin-bottom:40px; }
+.editable_content + .FormGroup { margin-top:40px; }
+
+/* 為文字上稿區可能出現的元素做設定 */
+.editable_content, .editable_content p, .editable_content .para, .editable_content blockquote, .editable_content li { text-align:justify; text-justify:inter-ideograph; }
+.editable_content, .editable_content p, .editable_content .para, .editable_content blockquote { line-height:200%; }
+.editable_content p, .editable_content .para, .editable_content div { padding:0; }
+.editable_content p, .editable_content .para, .editable_content ul, .editable_content ol, .editable_content div { margin-top:10px; margin-bottom:20px; }
+.editable_content table, .editable_content iframe { margin-top:10px; margin-bottom:20px; }
+.editable_content h3, .editable_content h4, .editable_content h5, .editable_content h6 { line-height:120%; padding-top:10px; }
+.editable_content blockquote { margin:-5px 0 30px 25px; padding:20px; background-color:#eaeaea; border-left:5px solid #CCC; overflow:hidden; }
+.editable_content ol { list-style-type:decimal; padding-left:25px; overflow:hidden; }
+.editable_content ul { list-style-type:disc; padding-left:25px; overflow:hidden; }
+	.editable_content ul[type="disc"] { list-style-type:disc; }
+	.editable_content ul[type="circle"] { list-style-type:circle; }
+	.editable_content ul[type="square"] { list-style-type:square; }
+.editable_content li { padding-bottom:10px; line-height:150%; }
+.editable_content ol ol { list-style-type:lower-alpha; }
+.editable_content ul ul { list-style-type:circle; }
+.editable_content ul ul, .editable_content ul ol, .editable_content ol ul, .editable_content ol ol { margin-bottom:0; }
+.editable_content ul > li li:last-child, .editable_content ol > li li:last-child { padding-bottom:0; }
+.font_red { color:#e60000; }
+.font_blue { color:#0052d0; }
+.font_bold { font-weight:bold; } 
+.font_italic { font-style:italic; }
+.font_underline { text-decoration:underline; }
+
+/* 影片、相關連結、相關檔案 */
+p.MsgModule_Download, p.MsgModule_Link { padding:0; line-height:160%; }
+	p.MsgModule_Download span, p.MsgModule_Link span { white-space:nowrap; }
+	
+.MsgModule_Media { margin-left:auto; margin-right:auto; padding:10px 0 !important; }
+	.MsgModule_Media iframe { margin:0 !important; }
+	.MsgModule_Media .describe { text-align:left; margin:0 !important; padding:10px; background-color:#ebebeb; }
+	.MsgModule_Media .describe span { display:block; line-height:180%; }
+	noscript div.ytlink { padding:0; line-height:18px; }/* no script時影片區塊顯示的訊息 */
+
+/* 文繞圖設定 */
+.editable_content div.district { overflow:hidden; }
+.editable_content div.district p  { padding:0; margin:0; }
+.editable_content div.district h3 { padding-top:0; margin-bottom:5px; }
+.editable_content .img_bg { margin-bottom:15px; }
+.editable_content .imgleft { float:left; margin-right:15px; margin-top:3px; }
+.editable_content .imgright { float:right; margin-left:15px; margin-top:3px; }
+.editable_content .imgcenter { clear:both; text-align:center; margin-top:0; margin-left:auto; margin-right:auto; }
+.editable_content .imgleft, .editable_content .imgright { max-width:50%; }
+.editable_content .img_bg span { 
+	display:block; padding:5px 0 0 14px; box-sizing:border-box; position:relative;
+	font-size:87.5%; line-height:140%; text-align:left; color:#7e7e7e; 
+	}
+.editable_content .img_bg span::after { 
+	content:''; display:block; position:absolute; top:12px; left:0;
+	border-left:5px solid rgba(255,255,255,0); border-right:5px solid rgba(255,255,255,0); border-bottom:5px solid #818181; 
+	}
+	
+/* 單篇延伸區塊 */
+h3.ext_title { 
+	display:inline-block; border-bottom:2px solid #f16e00; margin-top:20px; padding:2px 10px 2px 34px; 
+	font-size:112.5% !important; font-weight:500 !important; line-height:150% !important; color:#f16e00; letter-spacing:1px; 
+	background:url("../images/icon_module.png") no-repeat;
+	}
+	h3.icon_more { background-position: 5px 6px; }
+	h3.icon_file { background-position: 5px -94px; }
+	h3.icon_link { background-position: 5px -194px; }
+	h3.icon_photo { background-position: 5px -294px; }
+.editable_content+h3.ext_title { margin-top:20px; }
+.prevNextLink+h3.ext_title { margin-top:60px; }
+
+ul.ext_list { border-top:2px solid #e5e5e5; margin-top:-2px; padding-top:6px; padding-left:35px; list-style-type:decimal; overflow:hidden; }
+ul.ext_list li { position:relative; padding:4px 0; line-height:140%; }
+ul.ext_list li a { color:#595959; text-decoration:none; word-wrap:break-word; }
+ul.ext_list li a:hover { color:#ff4c11; text-decoration:underline; }
+ul.ext_list li span.file_ext { width:20px; height:20px; margin-left:6px; text-indent:-10000px; }
+h3.ext_title+#colorbox_thum { border-top:2px solid #e5e5e5; margin-top:-2px; }
+
+.editable_content h3.ext_title, .editable_content ul.ext_list, .editable_content h3.ext_title+#colorbox_thum { margin-left:0; margin-right:0; }
+
+
+/* html編輯區的表格預設樣式 */
+.editable_content table[align="center"] { margin-left:auto; margin-right:auto; }
+.editable_content table caption, .editable_content .tableWrap_caption { font-weight:bold; color:#333; font-size:87.5%; text-align:left; line-height:140%; }
+	.editable_content table caption { margin:5px 0; }
+	.editable_content .tableWrap_caption { padding-top:5px; margin:0; }
+.editable_content .tableWrap { position:relative; }
+.editable_content .tableWrap table { margin:0; }
+	
+/* html編輯區的表格外框樣式 */
+.editable_content .table_style1 > tbody > tr > th, .editable_content .table_style1 > tbody > tr > td { padding:8px; border-left:1px solid #000; border-bottom:1px solid #000; line-height:160%; }
+.editable_content .table_style1 > tbody > tr > th { background-color:#dedede; color:#333; white-space:nowrap; }
+
+/* 移除第一個物件的上邊界、上間距避免過大的空白 */
+.editable_content > *:first-child, .editable_content td > *:first-child { 
+	padding-top:0 !important; margin-top:0 !important; 
+	}
+/* 移除最後一個物件的下邊界、下間距避免過大的空白 */
+.editable_content > *:last-child, .editable_content td > *:last-child{ 
+	padding-bottom:0 !important; margin-bottom:0 !important; 
+	}
+.editable_content iframe, .editable_content img, .editable_content div, .editable_content table { max-width:100%; box-sizing:border-box; }/* 避免爆版 */
+.editable_content * { word-wrap:break-word; }
+
+/* 條文 */
+.clause .l1 { margin-bottom:10px; }
+.clause .l2 { margin-top:0; margin-bottom:10px; padding-left:33px; text-indent:-33px; }
+.clause .l2.cont { padding-left:0; text-indent:0; }
+.clause .l3 { margin-top:0; margin-bottom:10px; padding-left:62px; text-indent:-26px; }
+.clause .l3.cont { padding-left:36px; text-indent:0; }
+.clause .l4 { margin-top:0; margin-bottom:10px; padding-left:78px; text-indent:-13px; }
+.clause .l5 { margin-top:0; margin-bottom:10px; padding-left:100px; text-indent:-20px; }
+
+.clause .l1+.l1, .clause .l2+.l1, .clause .l3+.l1, .clause .l4+.l1, .clause .l5+.l1,
+.clause .l1+h3, .clause .l2+h3, .clause .l3+h3, .clause .l4+h3, .clause .l5+h3 { margin-top:40px; }
+.clause .l1+h4, .clause .l2+h4, .clause .l3+h4, .clause .l4+h4, .clause .l5+h4 { margin-top:20px; }
+
+/*StyleStart*/
+/*段落*/
+.para { display:block; }
+/*字級12px*/
+.font_12px { font-size:75%; }
+/*字級13px*/
+.font_13px { font-size:81.25%; }
+/*字級14px*/
+.font_14px { font-size:87.5%; }
+/*字級15px*/
+.font_15px { font-size:93.75%; }
+/*字級16px*/
+.font_16px { font-size:100%; }
+/*字級18px*/
+.font_18px { font-size:112.5%; }
+/*字級20px*/
+.font_20px { font-size:125%; }
+/*字級22px*/
+.font_22px { font-size:137.5%; }
+/*字級24px*/
+.font_24px { font-size:150%; }
+/*字級26px*/
+.font_26px { font-size:162.5%; }
+/*字級28px*/
+.font_28px { font-size:175%; }
+/*字級30px*/
+.font_30px { font-size:187.5%; }
+/*字級32px*/
+.font_32px { font-size:200%; }
+/*字級36px*/
+.font_36px { font-size:225%; }
+/*文字靠左*/
+.editable_content .tl { text-align:left; }
+/*文字置中*/
+.editable_content .tc { text-align:center; }
+/*文字靠右*/
+.editable_content .tr { text-align:right; }
+/*h3標題*/
+.editable_content h3 { font-size:150%; font-weight:normal; color:#f16e00; }
+/*h4標題*/
+.editable_content h4 { font-size:125%; font-weight:normal; color:#de1e19; }
+/*h5標題*/
+.editable_content h5 { font-size:112.5%; font-weight:normal; color:#333; }
+/*h6標題*/
+.editable_content h6 { font-size:112.5%; font-weight:normal; color:#333; }
+/* 表格外框樣式1 */
+.editable_content table.table_style1 { border-right:1px solid #000; border-top:1px solid #000; }
+/*StyleEnd*/

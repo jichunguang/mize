@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------------------------*/
+/* 服務項目 */
+.IndexService { position:relative; overflow:hidden; }
+.IndexService > div { max-width:1280px; padding:0 10px; margin:0 auto; box-sizing:border-box; }
+.IndexService h3.title { margin-bottom:20px; font-size:28px; font-weight:300; color:#6a6a6a; text-align:center; letter-spacing:1px; line-height:50px; }
+.IndexService h3.title span { 
+	display:block; width:180px; height:3px; margin:0 auto; 
+	background: #ed5e05;
+	background: -o-linear-gradient(left,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* W3C */
+	}
+
+.IndexService .service_type::after { content:''; display:block; width:100%; clear:both; }
+.IndexService .service_type li { float:left; margin-bottom:20px; box-sizing:border-box; }
+.IndexService .service_type li > a { 
+	display:block; max-width:150px; margin:0 auto; cursor:pointer; 
+	color:#9f9f9f; line-height:150%; letter-spacing:2px; text-align:center; text-decoration:none; 
+	}
+.IndexService .service_type li > a > span { 
+	display:block; margin:0 auto 5px;  border-color:#f0f0f0; border-style:solid; position:relative; 
+	background-color:#e6e6e6; 
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	}
+.IndexService .service_type li > a > span::before { 
+	content:''; display:block; position:absolute; top:50%; left:50%; 
+	background-size:cover; background-position:center top; background-repeat:no-repeat;
+	}
+	.IndexService .service_type li.item1 > a > span::before { background-image:url("icon_index_service1.png"); }
+	.IndexService .service_type li.item2 > a > span::before { background-image:url("icon_index_service2.png"); }
+	.IndexService .service_type li.item3 > a > span::before { background-image:url("icon_index_service3.png"); }
+	.IndexService .service_type li.item4 > a > span::before { background-image:url("icon_index_service4.png"); }
+
+/* hover效果 */
+.IndexService .service_type li > a,
+.IndexService .service_type li > a > span {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	}
+.IndexService .service_type li > a:hover { color:#ed5e05; }
+.IndexService .service_type li > a:hover > span { background-color:#ff9a50; border-color:#ffc89c; }
+.IndexService .service_type li > a:hover > span::before { background-position:center bottom; }
+
+/* 內容 */
+.IndexService .cont { 
+	position:absolute; opacity:0; bottom:100%; left:0; width:100%; height:100%; z-index:2;
+	background-color:#f47722; 
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out,;
+	}
+.IndexService .cont.open { opacity:1; bottom:0; }
+.IndexService .cont > div { max-width:1280px; padding-left:10px; padding-right:10px; margin:0 auto; position:relative; }
+
+.IndexService .cont .title span { display:block; color:#fff; font-size:22px; }
+.IndexService .cont .title::after { 
+	content:''; display:block; position:absolute; box-sizing:border-box; 
+	background-size:cover; background-position:center bottom; background-repeat:no-repeat; 
+	}
+	.IndexService .item1 .cont .title::after { background-image:url("icon_index_service1.png"); }
+	.IndexService .item2 .cont .title::after { background-image:url("icon_index_service2.png"); }
+	.IndexService .item3 .cont .title::after { background-image:url("icon_index_service3.png"); }
+	.IndexService .item4 .cont .title::after { background-image:url("icon_index_service4.png"); }
+	.IndexService .item5 .cont .title::after { background-image:url("../images/icon_index_service5.png"); }
+	.IndexService .item6 .cont .title::after { background-image:url("../images/icon_index_service6.png"); }
+	
+.IndexService .cont .desc { box-sizing:border-box; color:#fff; line-height:200%; }
+.IndexService .cont .conglomerate a { 
+	display:block; float:left; background-color:#fff;  
+	-webkit-box-shadow:0 0 8px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 8px rgba(0,0,0,0.3);
+	box-shadow:0 0 8px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	}
+.IndexService .cont .conglomerate a:hover { transform:translateY(-5px); }
+.IndexService .cont .conglomerate a span { display:block; box-sizing:border-box; height:50%; }
+.IndexService .cont .conglomerate a.single_ray span { display:block; box-sizing:border-box; height:100%; }
+.IndexService .cont .conglomerate a span::after { 
+	content:''; display:block; width:100%; height:100%;
+	background-position:center center; background-repeat:no-repeat; background-size:contain; 
+	}
+.IndexService .cont .conglomerate a span.brand { border-width:1px; border-style:solid; box-sizing:border-box; }
+
+	/* 震旦OA */
+	.IndexService .cont .conglomerate a.acoe span.logo { background-color:#de1e19; }
+	.IndexService .cont .conglomerate a.acoe span.logo::after { background-image:url("../images/logo_acoe_white_s.png"); }
+	.IndexService .cont .conglomerate a.acoe span.brand { border-color:#de1e19; }
+	.IndexService .cont .conglomerate a.acoe span.brand::after { background-image:url("../images/brand_sharp.png"); }
+	/* 金儀 */
+	.IndexService .cont .conglomerate a.oaworld span.logo { background-color:#00a7ac; }
+	.IndexService .cont .conglomerate a.oaworld span.logo::after { background-image:url("../images/logo_oaworld_white.png"); }
+	.IndexService .cont .conglomerate a.oaworld span.brand { border-color:#00a7ac; }
+	.IndexService .cont .conglomerate a.oaworld span.brand::after { background-image:url("../images/brand_konica_minolta.png"); }
+	/* 互盛 */
+	.IndexService .cont .conglomerate a.eosasc span.logo { background-color:#0850a3; }
+	.IndexService .cont .conglomerate a.eosasc span.logo::after { background-image:url("../images/logo_eosasc_white.png"); }
+	.IndexService .cont .conglomerate a.eosasc span.brand { border-color:#0850a3; }
+	.IndexService .cont .conglomerate a.eosasc span.brand::after { background-image:url("../images/brand_ricoh.png"); }
+	/* 康鈦 */
+	.IndexService .cont .conglomerate a.kmds span.logo { background-color:#7e888e; }
+	.IndexService .cont .conglomerate a.kmds span.logo::after { background-image:url("../images/logo_kmds_white_s.png"); }
+	.IndexService .cont .conglomerate a.kmds span.brand { border-color:#7e888e; }
+	.IndexService .cont .conglomerate a.kmds span.brand::after { background-image:url("../images/brand_konica_minolta_develop.png"); }
+	/* 大客戶 */
+	.IndexService .cont .conglomerate a.ma span.logo { background-color:#de1e19; }
+	.IndexService .cont .conglomerate a.ma span.logo::after { background-image:url("../images/logo_ma_white_s.png"); }
+	.IndexService .cont .conglomerate a.ma span.brand { border-color:#de1e19; }
+	.IndexService .cont .conglomerate a.ma span.brand::after { background-image:url("../images/brand_ma.png"); }
+	/* 家具_ray */
+	.IndexService .cont .conglomerate a.of_ray span.logo { background-color:#de1e19; }
+	.IndexService .cont .conglomerate a.of_ray span.logo::after { background-image:url("../images/logo_acoe_white_s.png"); }
+	.IndexService .cont .conglomerate a.of_ray span.brand { border-color:#de1e19; }
+	.IndexService .cont .conglomerate a.of_ray span.brand::after { background-image:url("../images/brand_of.png"); }
+	/* 雲端_ray */
+	.IndexService .cont .conglomerate a.cloud_ray span.logo { background-color:#de1e19; }
+	.IndexService .cont .conglomerate a.cloud_ray span.logo::after { background-image:url("../images/logo_acoe_white_s.png"); }
+	.IndexService .cont .conglomerate a.cloud_ray span.brand { border-color:#de1e19; }
+	.IndexService .cont .conglomerate a.cloud_ray span.brand::after { background-image:url("../images/brand_cloud.png"); }
+	/* 通訊_ray */
+	.IndexService .cont .conglomerate a.commu_ray span.logo { background-color:#de1e19; }
+	.IndexService .cont .conglomerate a.commu_ray span.logo::after { background-image:url("../images/logo_acoe_white_s.png"); }
+	.IndexService .cont .conglomerate a.commu_ray span.brand { border-color:#de1e19; }
+	.IndexService .cont .conglomerate a.commu_ray span.brand::after { background-image:url("../images/brand_communication.png"); }
+	/* 通業_ray */
+	.IndexService .cont .conglomerate a.git_ray span.logo { background-color:#093f7f; }
+	.IndexService .cont .conglomerate a.git_ray span.logo::after { background-image:url("../images/logo_3d.png"); }
+	.IndexService .cont .conglomerate a.git_ray span.brand { border-color:#093f7f; }
+	.IndexService .cont .conglomerate a.git_ray span.brand::after { background-image:url("../images/brand_git.png"); }
+	/* 長陽_ray */
+	.IndexService .cont .conglomerate a.everyoung_ray span.logo { background-color:#1b94a5; }
+	.IndexService .cont .conglomerate a.everyoung_ray span.logo::after { background-image:url("../images/logo_3d2.png"); }
+	.IndexService .cont .conglomerate a.everyoung_ray span.brand { border-color:#1b94a5; }
+	.IndexService .cont .conglomerate a.everyoung_ray span.brand::after { background-image:url("../images/brand_everyoung2.png"); }
+
+.IndexService .cont .close { 
+	position:absolute; top:10px; right:10px; display:block; width:28px; height:28px; border:2px solid #fff; cursor:pointer; 
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	}
+.IndexService .cont .close:hover { background-color:#ffc000; border:2px solid #ffc000; }
+.IndexService .cont .close::before, .IndexService .cont .close::after { 
+	content:''; display:block; position:absolute; top:50%; left:50%; margin:-8px 0 0 -1px; width:2px; height:16px; background-color:#fff; 
+	}
+.IndexService .cont .close::before { 
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	}
+.IndexService .cont .close::after { 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+	}
+
+	
+/*----------------------------------------------------------------------*/
+/* 首頁文章 */
+.IndexArticle { position:relative; }
+.IndexArticle > div { max-width:1280px; padding:0 10px; margin:0 auto; box-sizing:border-box; position:relative; }
+.IndexArticle .list::after { content:''; display:block; width:100%; clear:both; }
+
+.IndexArticle .list .item { float:left; box-sizing:border-box; padding-left:5px; padding-right:5px; }
+.IndexArticle .list .item .img { background-size:cover; background-repeat:no-repeat; background-position:center center; position:relative; }
+.IndexArticle .list .item .img img { width:100%; }
+.IndexArticle .list .item .img::after { content:''; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#fff; opacity:0; }
+	
+.IndexArticle .list .item .title a { display:block; text-decoration:none; color:#333; line-height:135%; box-sizing:border-box; }
+
+.IndexArticle .list .item .desc { font-size:13px; line-height:150%; }
+
+.IndexArticle .list .item .btn { padding:0; text-align:center; }
+.IndexArticle .list .item .btn a { 
+	display:inline-block;border:2px solid #000; 
+	color:#333; font-size:14px; text-decoration:none; 
+	-webkit-box-shadow:0 0 8px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 8px rgba(0,0,0,0.2);
+	box-shadow:0 0 8px rgba(0,0,0,0.2);
+	}
+
+/* hover效果 */
+.IndexArticle .list .item .cont, 
+.IndexArticle .list .item .img, 
+.IndexArticle .list .item .img::after, 
+.IndexArticle .list .item .desc, 
+.IndexArticle .list .item .btn, 
+.IndexArticle .list .item .btn a { 
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	}
+.IndexArticle .list .item .title a:hover { color:#de1e19; }
+.IndexArticle .list .item .btn a:hover { border:2px solid #de1e19; background-color:#de1e19; color:#fff; }
+
+
+/*----------------------------------------------------------------------*/
+/* 在線客服 */
+.IndexOnlineService { 
+	background-color:#f47722; 
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.4);
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	}
+.IndexOnlineService > div { max-width:1280px; padding-left:10px; padding-right:10px; margin:0 auto; box-sizing:border-box; overflow:hidden; position:relative; }
+.IndexOnlineService > div > * { box-sizing:border-box; }
+
+.IndexOnlineService .cont { font-size:16px; color:#fff; line-height:150%; }
+.IndexOnlineService .cont div { background:url("../images/icon_index_online_service.png") no-repeat; min-height:52px; }
+	.IndexOnlineService .cont .service_time { background-position:0 0; }
+	.IndexOnlineService .cont .service_phone { background-position:0 -100px; }
+.IndexOnlineService .cont strong { display:block; }
+	.IndexOnlineService .cont .service_time strong { padding-top:5px; }
+	.IndexOnlineService .cont .service_phone strong { font-family:"Arial Black", Gadget, sans-serif; letter-spacing:2px; padding-top:5px; line-height:100%; }
+.IndexOnlineService .cont .service_phone a { color:#fff; }
+
+.IndexOnlineService .btns div { float:left; }
+.IndexOnlineService .btns a { display:block; margin:0 auto; text-align:center; text-decoration:none; font-size:18px; color:#fff; line-height:150%; }
+.IndexOnlineService .btns a span::before { 
+	display:block; content:''; position:absolute; top:50%; left:50%; width:52px; 
+	background:url("../images/icon_index_online_service.png") no-repeat; 
+	}
+
+/* hover效果 */
+.IndexOnlineService .btns a, 
+.IndexOnlineService .btns a span {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	}
+
+/*----------------------------------------------------------------------*/
+/* 新聞,月刊,傳善獎,震旦博物館 */
+.IndexNews > div { max-width:1280px; padding:0 10px; margin:0 auto; box-sizing:border-box; position:relative; }
+.IndexNews > div::after { display:block; content:''; width:100%; clear:both; }
+
+/* 新聞 */
+.IndexNews .news { 
+	box-sizing:border-box; background-color:#9b9b9b; 
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	box-shadow:0 0 10px rgba(0,0,0,0.20);
+	}
+.IndexNews .news li { border-top:1px solid #cacaca; }
+.IndexNews .news ul li:first-child { border-top:0; }
+.IndexNews .news li a { display:block; width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#fff; line-height:150%; text-decoration:none; }
+.IndexNews .news li a:hover { color:#ffd200; }
+.IndexNews .news .btn { text-align:center; }
+.IndexNews .news .btn a { 
+	display:inline-block; height:32px; padding-right:25px; margin:0 10px; border:2px solid #eeeeee; background-color:#7e7e7e; 
+	font-size:14px; color:#fff; line-height:32px; font-weight:bold; text-decoration:none; position:relative; 
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.IndexNews .news .btn a::after { 
+	display:block; content:''; position:absolute; top:11px; 
+	width:8px; height:8px; border-top:1px solid #fff; border-right:1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+	}
+.IndexNews .news .btn a:hover { border:2px solid #f15e23; background-color:#f15e23; color:#fff; }
+
+/* 月刊 */
+.IndexNews .monthly { box-sizing:border-box; position:relative; }
+.IndexNews .monthly > div { 
+	background-color:#fff; height:100%; position:relative; overflow:hidden; 
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	box-shadow:0 0 10px rgba(0,0,0,0.20);
+	}
+.IndexNews .monthly .cover { height:100%; background-position:center center; background-repeat:no-repeat; background-size:cover; }
+.IndexNews .monthly .cover img { width:100%; }
+.IndexNews .monthly .cont { box-sizing:border-box; position:relative; }
+.IndexNews .monthly .cont .title { border-bottom:1px solid #bebebe; text-align:center; letter-spacing:2px; }
+.IndexNews .monthly .cont .title a { display:block; margin:0 auto; background:url("../images/logo_monthly.png") no-repeat 0 0; background-size:contain; text-indent:-10000px; }
+.IndexNews .monthly .cont .desc { font-size:14px; line-height:170%; }
+.IndexNews .monthly .cont .btn { text-align:center; }
+.IndexNews .monthly .cont .btn a { 
+	display:inline-block; border:2px solid #a3a3a3; margin:0 10px; height:32px; line-height:32px;
+	font-size:14px; color:#777777; font-weight:bold; text-decoration:none; 
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.IndexNews .monthly .cont .btn a:hover { border:2px solid #f16e00; background-color:#f16e00; color:#fff; }
+
+/* 傳善獎,震旦博物館 */
+.IndexNews .btns div { box-sizing:border-box; }
+.IndexNews .btns a { 
+	display:block; width:100%; position:relative; 
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.20);
+	box-shadow:0 0 10px rgba(0,0,0,0.20);
+	}
+.IndexNews .btns a span { 
+	display:block; background-color:#fff; text-indent:-10000px; 
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.IndexNews .btns a span::after { 
+	content:''; display:block; position:absolute; top:50%; left:50%; width:140px; height:36px; margin:-18px 0 0 -70px;
+	background-position:center center; background-repeat:no-repeat; background-size:contain; 
+	}
+	.IndexNews .btns .auroratrust a span::after { background-image:url("../images/logo_auroratrust.png"); }
+	.IndexNews .btns .auroramuseum a span::after { background-image:url("../images/logo_auroramuseum.png"); }
+
+
+/*----------------------------------------------------------------------*/
+/* 加入震旦 */
+.IndexRecruit { background:url("../images/bg_index_recruit.jpg") no-repeat center center; background-size:cover; 
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.4);
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	}
+.IndexRecruit > div { max-width:1280px; padding-left:10px; padding-right:10px; margin:0 auto; box-sizing:border-box; position:relative; }
+
+.IndexRecruit h3.title { display:inline-block; border-bottom:3px solid #f15e23; padding-bottom:5px; margin-bottom:15px; color:#fff; font-size:28px; letter-spacing:1px; font-weight:400; }
+.IndexRecruit .desc { color:#fff; font-size:18px; line-height:200%; text-shadow:1px 1px 3px #000; }
+.IndexRecruit .btn { padding-top:30px; text-align:left; }
+.IndexRecruit .btn a { 
+	display:inline-block; width:180px; height:36px; padding-right:20px; border:2px solid #fff;
+	font-size:14px; color:#fff; line-height:36px; font-weight:bold; text-decoration:none; text-align:center; position:relative; 
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.IndexRecruit .btn a::after { 
+	display:block; content:''; position:absolute; top:13px; right:65px; 
+	width:8px; height:8px; border-top:1px solid #fff; border-right:1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+	}
+.IndexRecruit .btn a:hover { border:2px solid #f15e23; background-color:#f15e23; color:#fff; }
+
+
+/*----------------------------------------------------------------------*/
+/* 關係企業 */
+.IndexConglomerate { position:relative; }
+.IndexConglomerate > div { max-width:1280px; padding:0 10px; margin:0 auto; box-sizing:border-box; }
+.IndexConglomerate h3.title { font-size:28px; font-weight:300; color:#6a6a6a; text-align:center; letter-spacing:1px; line-height:50px; }
+.IndexConglomerate h3.title span { 
+	display:block; width:180px; height:3px; margin:0 auto; 
+	background: #ed5e05;
+	background: -o-linear-gradient(left,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f9f9f9 0%,#ed5e05 50%,#f9f9f9 100%); /* W3C */
+	}
+.IndexConglomerate { text-align:center; }
+.IndexConglomerate a { 
+	display:inline-block; margin-bottom:20px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+.IndexConglomerate a:hover { transform:translateY(-5px); }
