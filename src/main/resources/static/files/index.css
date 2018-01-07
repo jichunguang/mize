@@ -43,8 +43,8 @@
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	}
-.IndexService .service_type li > a:hover { color:#ed5e05; }
-.IndexService .service_type li > a:hover > span { background-color:#ff9a50; border-color:#ffc89c; }
+.IndexService .service_type li > a:hover { color:#05ed69; }
+.IndexService .service_type li > a:hover > span { background-color:#50ff76; border-color:#abff9c; }
 .IndexService .service_type li > a:hover > span::before { background-position:center bottom; }
 
 /* 內容 */

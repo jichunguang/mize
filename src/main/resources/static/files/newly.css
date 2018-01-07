@@ -1,0 +1,183 @@
+#newly h1, #newly h2, #newly h3, #newly h4, #newly h5, #newly h6, #newly p, #newly ul, #newly li, #newly img {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    font-family: "微软雅黑";
+    color: #333;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+/*content*/
+#newly .page-content{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+#newly .page-content .img-banner{
+	widows: 100%;
+}
+#newly .img-banner img{
+	max-width: 100%;
+}
+#newly .page-content .img-desc{
+	text-indent: 2em;
+	line-height: 28px;
+	font-size: 16px;
+	padding: 10px;
+}
+#newly .page-content .list-block{
+	width: 100%;
+	overflow: hidden;
+}
+#newly .list-block h2{
+	font-size: 22px;
+	color: #e03127;
+	line-height: 60px;
+	text-align: center;
+}
+#newly .list-block .list-item li{
+	width: 33%;
+	padding-right: 0.3%;
+	float: left;
+	overflow: hidden;
+	margin: 10px 0;
+}
+#newly .list-block .list-item li.split{
+	width: 100%;
+}
+#newly .list-block li .item-img{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	padding: 0 10px 10px 0;
+	background: #fff;
+}
+#newly .list-block li .item-img img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid #cbcbcb;
+}
+#newly .item-desc h3{
+	color: #F60;
+	background: #efefef;
+	line-height: 28px;
+	padding: 8px 0;
+	text-align: center;
+}
+#newly .item-desc p {
+    padding: 10px 8px;
+    line-height: 24px;
+    display: block;
+    margin-left: 150px;
+}
+#newly .item-desc p:nth-child(odd){
+	background: #efefef;
+}
+/*课程收益*/
+#newly .list-course{
+	overflow: hidden;
+	margin: 10px 0 40px;
+	padding: 0 10px;
+}
+#newly .list-course li{
+	width: 45%;
+	float: left;
+	font-size: 18px;
+	background: url(../images/check.png) no-repeat left 10px;
+	padding-left: 2.4%;
+	line-height: 40px;
+	color: #e83828;
+	
+}
+/*课程时间*/
+#newly .list-time{
+	background: url(../images/bg02.jpg) no-repeat 94% center #8797a0;
+	padding: 30px 0;
+}
+#newly .list-time ul{
+	width: 70%;
+	padding-left: 2%;
+	overflow: hidden;
+}
+#newly .list-time li{
+	line-height: 30px;
+	font-size: 18px;
+	color: #fff;
+}
+#newly .list-time li span{
+	color: #e03127;
+}
+/*精彩课程*/
+#newly .wrap{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#newly .list-class{
+	overflow: hidden;
+	width: 50%;
+	float: left;
+}
+#newly .wrap h2{
+	text-align: left;
+}
+#newly .list-class ul{
+	padding-left: 15px;
+}
+#newly .list-class li{
+	line-height: 30px;
+	background: url(../images/bg.png) no-repeat left center;
+	padding-left: 24px;
+}
+/* 手机或小平板 phone */
+@media all and (max-width: 767px) {
+#newly .list-course li{
+   		width: 95%;
+   }
+#newly .list-time{
+   		padding: 30px 10px;
+   		background: #8797a0;
+   }
+#newly .list-time ul{
+   		width: 95%;
+   }
+#newly .list-block .list-item li{
+   		width: 94%;
+   		padding: 0 3%;
+   }
+#newly .list-block .list-item li.split{
+   		width: 94%;
+   		padding: 0 3%;
+   }
+#newly .list-class{
+   		width: 98%;
+   }
+#newly .wrap .box{
+   	width: 94%;
+   	margin: 0 auto;
+   }
+#newly .list-course li{
+   	background-size: 20px;
+   	padding-left: 24px;
+   }
+#newly .list-block li .item-img{
+	float:none;
+	}
+#newly .item-desc p{
+	margin-left:0px;
+	}
+#newly .list-block li .item-img{
+	margin:0 auto;
+	}
+#newly .list-time li {
+    text-align: left;
+    padding-bottom: 1em;
+	}
+}
