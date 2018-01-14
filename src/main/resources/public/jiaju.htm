@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script async="" charset="utf-8" src="/files1/udeskApi.js"></script><script charset="utf-8" src="/files1/v.htm"></script><script type="text/javascript" async="" src="/files1/ga.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="主管桌/产品推荐—震旦办公家具">
+<meta name="keywords" content="办公家具、办公桌、办公椅、家具、班台">
+<meta name="description" content="震旦办公家具是领先的专业家具设计、生产企业，于1965年在台湾成立。以“让办公生活更美好”为理念，为顾客提供人性、环保、舒适的空间解决方案！全国服务热线：800-820-0168/400-920-6568">
+<title>主管桌/产品推荐—震旦办公家具</title>
+
+<link href="/files1/global.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/files1/jquery-1.js"></script>
+<script type="text/javascript" src="/files1/jquery.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+	$('.fixpng').ifixpng();
+	$(document).bind("contextmenu",function(event){
+		if( event.target.nodeName.toUpperCase() == "IMG" )
+			return false;
+    });
+    $(".Rside_online .W_off").bind("hover", function(event){mouseHoverCustomerService();});
+    $(".Rside_online .W_on").bind("mouseleave", function(event){mouseLeaveCustomerService();});
+});
+function setHomepage(){
+	var domain = "http://www.aurora-of.com/OFC/web_cn/index.do";
+	if (document.all){
+		document.body.style.behavior='url(#default#homepage)';
+		  document.body.setHomePage(domain);
+	}else if (window.sidebar){
+		if(window.netscape){
+			try{
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+			}catch (e){
+				alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址内输入 about:config，然后将选项 signed.applets.codebase_principal_support　值改为true" );
+			}
+		}
+		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+		prefs.setCharPref('browser.startup.homepage',domain);
+	}else{
+		alert('您的浏览器不支援自动设置首页，请手动至浏览器选单中加入!');
+	}
+}
+//-->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function mouseHoverCustomerService() {
+    $(".Rside_online .W_off").hide();
+    $(".Rside_online .W_on").show();
+}
+
+function mouseLeaveCustomerService() {
+    $(".Rside_online .W_on").hide();
+    $(".Rside_online .W_off").show();
+}
+</script>
+
+
+<link href="/files1/in07.css" rel="stylesheet" type="text/css">
+<script src="/files1/tabs.js" type="text/javascript"></script>
+<script>
+var banner1 = Array();
+var banner2 = Array();
+var banner3 = Array();
+var banner4 = Array();
+var banner = banner1;
+var bannerIndex = 0;
+var time;
+$(function(){
+	$('.tbn .nav').hover(function(){
+		var idx = parseInt($(this).attr("id").substring(3),10);
+		if( idx == 4 ){
+			banner = banner4;
+		}else if( idx == 3 ){
+			banner = banner3;
+		}else if( idx == 2 ){
+			banner = banner2;
+		}else /*if( idx == 1 )*/{
+			banner = banner1;
+		}
+		bannerIndex = 0;
+		loop();
+	}, function(){
+	});
+	loop();
+});
+function loop(){
+	try{
+		clearTimeout(time);
+	}catch(e){
+	}
+	if( banner.length > 0 ){
+		if( banner.length > 1 ){
+			time = setTimeout(loop,4000);
+		}
+		setImage('/files/banner1.jpg');
+		bannerIndex++;
+		if( bannerIndex < 0 ) bannerIndex = 0;
+		if( bannerIndex >= banner.length ) bannerIndex = 0;
+	}else{
+		setImage('/files/banner2.jpg');
+	}
+	$("#searchCategory").change(function(){
+		if( $(this).val() != 0 ){
+			document['product_search'].submit();
+		}else{
+			alert("請選擇");
+		}
+	});
+}
+function setImage(data){
+	$('#picArea img').fadeOut();
+	$('#picArea').html('<img src="'+data+'" width="980" height="380" display="none"/>');
+	$('#picArea img').fadeIn();
+}
+</script>
+
+<script src="/files1/out_config"></script><script src="/files1/free"></script></head>
+<body class="index_bg">
+<div class="wrapper">
+    <div class="header">
+    
+
+
+        <h1>
+          <div class="logo">
+            <a href="http://www.aurora-of.com.cn/OFC/web_cn/index.do"><img src="/files1/1logo.png" title="震旦办公家具" alt="震旦办公家具"><span style="display:none;">震旦办公家具</span></a>
+          </div>
+        </h1>
+
+
+        <div class="nav">
+            <ul>
+               
+                <li class="m06"><a href="http://localhost:8080/homepage.htm">联络我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+/**/
+/**/
+banner2.push('210694124279484/29c62ac0020000001c00de45cde1b937.jpg');
+/**/
+/**/
+/**/
+banner4.push('210697295297960/4e7da8ef900000009c9a3edb7ebd8651.jpg');
+/**/
+</script>
+    <div class="content">
+        <div class="tbn">
+            <div class="pic" id="picArea"><img src="http://www.aurora-of.com/ofc_upload/productBanner/210697295297960/4e7da8ef900000009c9a3edb7ebd8651.jpg" display="none" width="980" height="380"></div>
+            <div class="navArea">
+        <div id="nav3" class="nav nav03"><a href="http://www.aurora-of.com.cn/OFC/web_cn/product_category.do?type=3" class="title">培训空间</a></div>
+            <div id="nav3" class="nav nav03"><a href="http://www.aurora-of.com.cn/OFC/web_cn/product_category.do?type=3" class="title">培训空间</a></div>
+                <div id="nav3" class="nav nav03"><a href="http://www.aurora-of.com.cn/OFC/web_cn/product_category.do?type=3" class="title">培训空间</a></div>
+              <div id="nav3" class="nav nav03"><a href="http://www.aurora-of.com.cn/OFC/web_cn/product_category.do?type=3" class="title">培训空间</a></div>
+            </div>
+            <div class="mask_l"></div>
+            <div class="mask_r"></div>
+        </div>
+        <div class="type03">
+           
+            <div class="larea">
+<form name="product_search" action="product_search.do" method="get">
+                <div class="t_serch"><img src="/files1/tt_serch.jpg"><br>
+        	<select name="searchCategory" id="searchCategory">
+        		<option value="">请选择</option>
+        		
+        			<option selected="selected" value="1">主管桌</option>
+        		
+        			<option value="2">会议桌</option>
+        		
+        		
+        		
+        	</select>
+                </div>
+</form>
+            </div>
+      <div class="marea">
+        <div class="top">
+          <h2>主管桌</h2>
+        </div>
+        <div class="middle">
+           <div class="setbox">
+
+            <div class="box">
+              <a href="http://localhost:8080/jiaju1.htm">
+                <img src="/files1/29c61b0d3c000000e0f862c519cc7c55.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>大乾元</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210749568396695">
+                <img src="/files1/29c61f16010000002f596db8997e45a2.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>明御</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210742623401560">
+                <img src="/files1/4e81fb94400000003e0f10090fc2a24b.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>朗御</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210724231417503">
+                <img src="/files1/29c61fa13f000000edf996d736da25ec.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>御天下-玉之华</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=1795125477933755">
+                <img src="/files1/29cbc819d100000087ef8501390d401e.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>天马</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=1794952631504042">
+                <img src="/files1/29cac05bae00000090c939d7631b5879.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>EDGE</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=1794238044792287">
+                <img src="/files1/2a363afed50000003426b37cf390ea9a.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>DA3</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210803629879432">
+                <img src="/files1/4e87ccfeb0000000812e59f47ccbd41e.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>Castle</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210769134352931">
+                <img src="/files1/4e8482d1b0000000b5c1d0ebda0cfe17.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>Easy</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210762214353757">
+                <img src="/files1/4e83d9dfb0000000aee2507e53ea857c.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>Promix</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210784571071174">
+                <img src="/files1/62a0225af0000000e3785d8033b699a7.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>ZEN品清和</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210780436719233">
+                <img src="/files1/629e33561000000007f852c834662ae4.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>ZEN大智度</p>
+            </div>
+
+            <div class="box">
+              <a href="http://www.aurora-of.com.cn/OFC/web_cn/product.do?id=210769109469225">
+                <img src="/files1/62a0894f30000000b28d47f0fa7f6d02.jpg" alt="" width="140" height="100">
+              </a>
+              <div class="mask_l"></div>
+              <div class="mask_r"></div>
+              <p>ZEN观自在</p>
+            </div>
+
+            <div class="clr"></div>
+          </div>
+        </div>
+        <div class="below"></div>
+      </div>
+            <div class="clr"></div>
+        </div>
+	</div>
+
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33683894-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f7464fe3bbe4be423e4f471a19ad01b' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="/files1/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=6f7464fe3bbe4be423e4f471a19ad01b" target="_blank"><img src="/files1/21.gif" width="20" height="20" border="0"></a>
+</div>
+<script type="text/javascript" src="/files1/jquery_002.js"></script>
+<link href="/files1/colorbox.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/files1/ent_path.txt"></script>
+<script>
+function openPop(){
+	$.colorbox({html:$("#pop1").html(),innerWidth:710,innerHeight:450});
+}
+function clickQQBtn() {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.charset = "utf-8";
+	script.src = "http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA1MjQ0OV8xNjQ5ODBfODAwODIwMDE2OF8";
+	$("body").append(script);
+}
+function copyMsn(){
+	var temp = document.getElementById('msn');
+	temp.focus();
+	temp.select();
+	rng=temp.createTextRange();
+	rng.execCommand("Copy");
+	alert('已將線上服務人員MSN複製到您的剪貼簿中，謝謝');
+}
+function showBoard(){
+		var width = "100%";
+		var height = "600px";
+		var htmlValue = $("#pop2").html().replace("xxxx","<iframe width='"+width+"' height='"+height+"' src='http://"+ent_domain+"/ENT/web_cn/iframe_onlineService.do?source=2&returnUrl="+myDomain+"/close.jsp' frameborder='0' allowfullscreen></iframe>");
+		$.colorbox({html:htmlValue,innerWidth:710,innerHeight:700});
+}
+</script>
+<span style="display:none"><input id="msn" name="msn" value="aurora_callcenter@msn.cn" type="text"></span>
+<div id="pop1" style="display:none">
+	<div class="customer_pop" style="top:0px;display:block;">
+		<div class="mid">
+			<h1><img src="/files1/onlineH1.jpg" width="660" height="30"></h1>
+			<div class="info"><img src="/files1/onlineInfo.jpg" width="640" height="238"></div>
+			<ul>
+			    
+				<li><a href="javascript:;" onclick="clickQQBtn();"><img src="/files1/onlineQQ.jpg" onmouseout="$(this).attr('src','/OFC/web_cn/images/onlineQQ.jpg')" onmouseover="$(this).attr('src','/OFC/web_cn/images/onlineQQ_on.jpg')" width="122" height="82" border="0"></a></li>
+				<li><a href="#" onclick="showBoard();return false;"><img src="/files1/onlineBoard.jpg" onmouseout="$(this).attr('src','/OFC/web_cn/images/onlineBoard.jpg')" onmouseover="$(this).attr('src','/OFC/web_cn/images/onlineBoard_on.jpg')" width="122" height="82" border="0"></a></li>
+			</ul>
+			<div class="clr"></div>
+		</div>
+	</div>
+</div>
+<div id="pop2" style="display:none">
+<div class="customer_pop" style="top:0px;display:block;">
+		<div class="mid">
+			<h1><img src="/files1/onlineH1.jpg" width="660" height="30"></h1>
+			<div class="info">xxxx</div>
+			<div class="clr"></div><br>
+			<div align="right"><a href="#" onclick="openPop();return false"><img src="/files1/return.jpg" width="76" height="27"></a></div>
+		</div>
+</div>
+</div>
+<div style="display: block;position: fixed;bottom: 10px;right: 5px;cursor: pointer;z-index: 1000;">
+	<script>
+(function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","http://assets-cli.udesk.cn/im_client/js/udeskApi.js","ud");
+ud({
+    "code": "206j3kf7",
+    "link": "http://aurora.udesk.cn/im_client?web_plugin_id=36811"
+});
+</script>
+</div>
+<!--  
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/10037536/10056454.js"></script>
+-->
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="udesk_container"><div id="udesk_btn"><a style="display: block; position: fixed; box-sizing: border-box; font-size: 13px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; text-decoration: none; z-index: 1000000000; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) currentcolor; border-style: solid solid none; border-width: 1px 1px 0px; border-image: none 100% / 1 / 0 stretch; -moz-border-top-colors: none; -moz-border-left-colors: none; -moz-border-bottom-colors: none; -moz-border-right-colors: none; background-color: rgb(241, 94, 35); width: 40px; height: 40px; border-radius: 20px; right: 0px; bottom: 0px; margin: 18px 5px 18px 18px;"><span style="display:block;float:left;width:20px;height:20px;margin:10px 10px 0;background:url(http://app-widget-cdn-s0.b0.upaiyun.com/dist/images/icon-mq.png?v=npyjcj3l6o17nwmi) no-repeat 0 -20px;background-size:40px auto;"></span><span style="display:block;float:left;width:1px;height:100%;background-color:rgba(0, 0, 0, .08);vertical-align:middle;background-color:#000\9;filter:alpha(opacity=10)\9;display:none;"></span><span id="udesk_btn_text" style="display:block;float:left;height:40px;margin:0 10px;line-height:40px;overflow-y:hidden; font-size: 13px; color: #fff;display:none;">客服下班，请留言</span><span id="udesk_btn_circle" style="display:none;position:absolute;top:-13px;right:-13px;width:26px;height:26px;text-align:center;line-height:26px;font-size:14px;color:#fff;border-radius:15px;background-color: #ff3b30;"></span></a></div><div id="udesk_panel" style="position:fixed;bottom:0;right:60px;z-index:-1;width:320px;height:480px;overflow:hidden;display:none;background-color:transparent;box-shadow:0 0 20px 0 rgba(0, 0, 0, .15);border:1px solid #ddd\9;"><iframe id="udesk_iframe" scrolling="no" allowtransparency="true" style="width:100%;height:100%;border:none;padding:0;margin:0;float:none;background:none;" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="/files1/a.htm" frameborder="0"></iframe></div></div></body></html>

@@ -1,0 +1,2 @@
+var ent_domain = "www.aurora.com.tw";
+var myDomain="http://www.aurora-of.com/OFC";
